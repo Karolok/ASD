@@ -1,0 +1,89 @@
+ADANIE
+
+Rozwa¿my ci¹g C z³o¿ony z n liczb naturalnych. Wyznacz liczbê znaków sumy elementów ci¹gu C w ustalonym systemie pozycyjnym o podstawie d.
+
+Uwaga wyj¹tek! W systemie unarnym (jedynkowy system liczbowy) liczbê 0 reprezentujemy jako s³owo puste.
+
+ 
+
+WEJŒCIE
+
+Wiersz zawieraj¹cy liczby n i d oddzielone znakiem odstêpu (kod ASCII 32) zakoñczony znakiem nowej linii (kod ASCII 10). Nastêpnie wiersz opisuj¹cy elementy ci¹gu C oddzielone znakiem odstêpu.
+
+ 
+
+WYJŒCIE
+
+Wiersz zakoñczony znakiem nowej linii, zawieraj¹cy liczbê naturaln¹ bêd¹ca rozwi¹zaniem zadania.
+
+Dodatkowo: wiersz zawieraj¹cy liczbê kontroln¹ równ¹ liczbie znaków w³aœciwych wczytanych z wejœcia (znak w³aœciwy to ka¿dy znak niebêd¹cy znakiem bia³ym, tj. znak odstêpu, znak nowej linii, znak tabulacji, oraz znakiem koñca pliku, tj. EOF).
+
+ 
+
+OGRANICZENIA
+
+D³ugoœæ n ci¹gu wejœciowego zawarta w przedziale od 0 do 10^7. Elementy ci¹gu C nie wiêksze ni¿ 10^9. Podstawa systemu pozycyjnego d ograniczona odpowiednio przez 1 i 10^9.
+
+ 
+
+PRZYK£AD 1
+
+wejœcie:
+
+10 10
+
+
+0 1 2 3 4 5 6 7 8 9
+
+wyjœcie:
+
+2
+
+
+14
+
+ 
+
+/* KOMENTARZ DO ROZWI¥ZANIA
+
+
+Suma elementów ci¹gu to 0+1+2+3+4+5+6+7+8+9=45. D³ugoœæ reprezentacji liczby 45 w systemie o podstawie 10 to 2.
+
+
+Dodatkowo z wejœcia wczytano ³¹cznie 14 znaków w³aœciwych. */
+
+ 
+
+PRZYK£AD 2
+
+wejœcie:
+
+10 2
+
+
+0 1 2 3 4 5 6 7 8 9
+
+wyjœcie:
+
+6
+
+
+13
+
+ 
+
+PRZYK£AD 3
+
+wejœcie:
+
+100 64
+
+
+94 39 65 93 40 83 5 100 82 32 80 20 77 89 100 28 36 47 95 32 13 37 79 48 66 50 57 47 29 18 89 26 19 41 5 20 70 4 25 74 51 15 54 17 22 89 34 89 7 84 33 13 68 93 15 85 64 65 94 15 99 67 28 63 59 84 24 22 32 34 72 76 48 37 30 71 10 68 72 33 26 80 98 65 93 42 0 72 17 76 16 70 27 35 46 45 76 64 65 94
+
+wyjœcie:
+
+3
+
+
+202
